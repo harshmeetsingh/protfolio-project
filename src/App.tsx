@@ -1,8 +1,9 @@
 import "./App.css";
-import { useTheme } from "@emotion/react";
+
 import Stack from "@mui/material/Stack";
 import { useRef } from "react";
 import { motion, useScroll, useTransform, MotionValue } from "framer-motion";
+import Box from "@mui/material/Box";
 
 function useParallax(value: MotionValue<number>, distance: number) {
   return useTransform(value, [-1, 1], [-distance, distance]);
@@ -75,8 +76,6 @@ function InfoCard({ id }: { id: number }) {
 }
 
 function App() {
-  const theme = useTheme();
-
   return (
     <Box
       sx={{
