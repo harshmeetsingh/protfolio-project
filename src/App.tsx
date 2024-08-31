@@ -1,20 +1,8 @@
-import { useState } from "react";
-import reactLogo from "./assets/react.svg";
-import viteLogo from "/vite.svg";
 import "./App.css";
 import { useTheme } from "@emotion/react";
-import Grid from "@mui/material/Unstable_Grid2";
-import { Avatar, Box } from "@mui/material";
-import { pink } from "@mui/material/colors";
 import Stack from "@mui/material/Stack";
 import { useRef } from "react";
-import {
-  motion,
-  useScroll,
-  useSpring,
-  useTransform,
-  MotionValue,
-} from "framer-motion";
+import { motion, useScroll, useTransform, MotionValue } from "framer-motion";
 
 function useParallax(value: MotionValue<number>, distance: number) {
   return useTransform(value, [-1, 1], [-distance, distance]);
