@@ -1,0 +1,70 @@
+body > * {
+  font-family: "Martel Sans", sans-serif;
+}
+
+.grid-item {
+  border: 2px solid black;
+  border-radius: 4px;
+  background-color: #f7fff7;
+  width: 100%;
+  height: 100%;
+}
+
+.grid-item-hero {
+  background-color: #f7fff7;
+  height: 100%;
+}
+
+.grid-item-details {
+  border: 2px solid black;
+  border-radius: 4px;
+  background-color: #f7fff7;
+}
+
+.grid-item-3 {
+  border: 2px solid black;
+  border-radius: 4px;
+  background-color: #f7fff7;
+  height: 100%;
+}
+
+.stack-item {
+  height: 100vh;
+  background: #f7fff7;
+  overflow: hidden;
+}
+
+.stack-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* This scales the image to cover the container */
+  object-position: center;
+}
+
+.stack-container {
+  height: auto;
+}
+
+.motion-text {
+  position: absolute;
+  z-index: 1;
+  padding-left: 8vw;
+  max-width: 44vw;
+  height: 100%;
+}
+.project-content {
+  max-width: 75%;
+  word-wrap: break-word;
+  color: #f7fff7;
+  font-weight: 700;
+}
+.project-description {
+  max-width: 25%;
+  word-wrap: break-word;
+  font-size: small;
+  color: #f7fff7;
+}
+.project-title {
+  font-weight: 900;
+  color: #f7fff7;
+}

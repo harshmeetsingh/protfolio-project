@@ -1,0 +1,17 @@
+html,
+body {
+  height: auto;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  display: flex;
+  /* Ensures that padding and borders are included in the element's total width and height */
+}
+#root {
+  display: flex;
+  height: auto;
+  width: 100%;
+  background: #fb6376;
+  overflow: hidden;
+}
