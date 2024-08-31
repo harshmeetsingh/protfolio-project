@@ -1,9 +1,9 @@
 import "./App.css";
-
 import Stack from "@mui/material/Stack";
 import { useRef } from "react";
 import { motion, useScroll, useTransform, MotionValue } from "framer-motion";
 import Box from "@mui/material/Box";
+import useScreenSize from "./custom-hooks/UseScreenSize";
 
 function useParallax(value: MotionValue<number>, distance: number) {
   return useTransform(value, [-1, 1], [-distance, distance]);
@@ -39,7 +39,9 @@ function InfoCard({ id }: { id: number }) {
     target: ref,
     offset: ["end end", "start start"],
   });
-  const y = useParallax(scrollYProgress, 200);
+  const currentScreenSize = useScreenSize();
+  const transfromValue = currentScreenSize.width > 500 ? 200 : 0;
+  const y = useParallax(scrollYProgress, transfromValue);
 
   return (
     <div className="stack-container">
@@ -63,9 +65,10 @@ function InfoCard({ id }: { id: number }) {
         style={{
           backgroundImage: `url(${imgSrcMap[id]})`,
           backgroundAttachment: "fixed",
-          backgroundSize: "contain",
+          backgroundSize: "cover",
           objectFit: "cover",
           backgroundPosition: "center",
+          backgroundRepeat: "no-repeat",
         }}
         className="stack-item"
       >

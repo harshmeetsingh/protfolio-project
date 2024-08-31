@@ -53,13 +53,14 @@ body > * {
   height: 100%;
 }
 .project-content {
-  max-width: 75%;
+  max-width: 40vw;
   word-wrap: break-word;
   color: #f7fff7;
   font-weight: 700;
+  padding-right: 32px;
 }
 .project-description {
-  max-width: 25%;
+  max-width: 20vw;
   word-wrap: break-word;
   font-size: small;
   color: #f7fff7;
