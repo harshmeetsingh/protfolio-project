@@ -5,6 +5,7 @@ import {
   NameTitle,
   iconsUrl,
   sectionTitles,
+  socialTexts,
   socialUrls,
 } from "../utils/content-utils";
 
@@ -18,7 +19,7 @@ const HomePage: FunctionComponent<HomePageProps> = () => {
         <h1 className="">{NameTitle}</h1>
       </header>
       <div className="home-page-aboutme">
-        <h2>{sectionTitles.aboutMe}</h2>
+        <h2 className="home-page-aboutme-title">{sectionTitles.aboutMe}</h2>
         <p>
           Hi, I'm Jasmine, a beginner UX designer with a love for creating
           intuitive, user-centered designs. With a background in [mention any
@@ -28,7 +29,7 @@ const HomePage: FunctionComponent<HomePageProps> = () => {
         </p>
       </div>
       <div>
-        <h2>{sectionTitles.education}</h2>
+        <h2 className="home-page-education-title">{sectionTitles.education}</h2>
         <ul>
           <li>"Completed UX Design course at [institution]" :: PlaceHolder</li>
           <li>"Certified in Human-Computer Interaction" :: Placeholder</li>
@@ -41,7 +42,7 @@ const HomePage: FunctionComponent<HomePageProps> = () => {
           <b>Email:</b> jasmine@example.com
         </p>
         <div className="social-links">
-          <b>Social Links:</b>
+          <b>{socialTexts.linkedIn}</b>
 
           <a
             className="social-links-image"

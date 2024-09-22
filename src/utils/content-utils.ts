@@ -7,11 +7,15 @@ export const iconsUrl = {
 };
 
 export const sectionTitles = {
-  aboutMe: "About Me",
+  aboutMe: "About Me.",
   skills: "Skills",
   project: "Project",
   education: "Education & Certification",
   contactInfo: "Contact",
+};
+
+export const socialTexts = {
+  linkedIn: "LinkedIn",
 };
 
 export const socialUrls = {
