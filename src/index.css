@@ -8,6 +8,15 @@ body {
   display: flex;
   /* Ensures that padding and borders are included in the element's total width and height */
 }
+a {
+  text-decoration: none;
+  color: inherit;
+  background: none;
+  border: none;
+  padding: 0;
+  margin: 0;
+  font: inherit;
+}
 #root {
   display: flex;
   height: auto;

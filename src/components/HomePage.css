@@ -1,0 +1,53 @@
+h1 {
+  margin: 0;
+}
+h3 {
+  margin: 0;
+}
+.home-page-container {
+  background-color: white;
+  width: 100vw;
+  height: 100vh;
+}
+
+.home-page-container > * {
+  padding-left: 8vw;
+  padding-right: 8vw;
+}
+
+.home-page-header {
+  background-color: pink;
+  height: 25vh;
+  padding-top: 4vh;
+}
+.home-page-footer {
+  background-color: rgb(194, 229, 236);
+  height: 20vh;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding-left: 8vw;
+  padding-right: 8vw;
+}
+
+.hero-image {
+  width: 104px;
+  height: 104px;
+  border-radius: 50%;
+  object-fit: cover;
+  display: block;
+  box-shadow: rgba(50, 50, 93, 0.35) 0px 40px 80px -20px,
+    rgba(0, 0, 0, 0.45) 0px 20px 40px -30px;
+}
+
+.social-links {
+  display: inline-flex;
+  object-fit: cover;
+  justify-content: center;
+  align-items: center;
+}
+
+.social-links-image {
+  margin-top: 8px;
+  margin-left: 4px;
+}

@@ -4,6 +4,7 @@ import { useRef } from "react";
 import { motion, useScroll, useTransform, MotionValue } from "framer-motion";
 import Box from "@mui/material/Box";
 import useScreenSize from "./custom-hooks/UseScreenSize";
+import HomePage from "./components/HomePage";
 
 function useParallax(value: MotionValue<number>, distance: number) {
   return useTransform(value, [-1, 1], [-distance, distance]);
@@ -46,17 +47,15 @@ function InfoCard({ id }: { id: number }) {
   return (
     <div className="stack-container">
       <div
-        className="motion-div-container motion-text"
+        className="motion-text"
         style={{ backgroundColor: colorMap[id], color: textColorMap[id] }}
       >
         <motion.div style={{ y }} ref={ref}>
           <h1 className="project-title">Project Name</h1>
-          <div className="project-content">
-            contentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontent
-          </div>
+          <div className="project-content">content is there so why worry</div>
           <br />
           <p className="project-description">
-            descriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescription
+            description is there so why worrty
           </p>
         </motion.div>
       </div>
@@ -87,6 +86,7 @@ function App() {
       }}
     >
       <Stack style={{ width: "100%" }} display="flex">
+        <HomePage />
         {[1, 2, 3, 4, 5].map((it) => {
           return <InfoCard id={it} />;
         })}
