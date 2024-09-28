@@ -21,3 +21,7 @@ export const socialTexts = {
 export const socialUrls = {
   linkedIn: "https://www.linkedin.com/in/jasmine-kaur-38bbb81ab/",
 };
+
+export const colorConstants = {
+  forText: "rgb(231,223,216)",
+};

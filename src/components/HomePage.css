@@ -4,10 +4,23 @@ h1 {
 h3 {
   margin: 0;
 }
+
+.name-title {
+  /** TEXT GRADIENT */
+  color: #fb6376;
+  background-image: -webkit-linear-gradient(0deg, #fb6376 2%, #998fc7 70%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  text-fill-color: transparent;
+  -webkit-text-fill-color: transparent;
+  padding-left: 2rem;
+}
+
 .home-page-container {
-  background-color: white;
+  background-color: black;
   width: 100vw;
   height: 100vh;
+  color: rgb(231, 223, 216);
 }
 
 .home-page-container > * {
@@ -15,24 +28,31 @@ h3 {
   padding-right: 8vw;
 }
 
-.home-page-header {
-  background-color: pink;
-  height: 25vh;
-  padding-top: 4vh;
+.content-container {
+  display: flex;
+  flex-direction: row;
+  flex-basis: 1;
+  gap: 2rem;
 }
-.home-page-footer {
-  background-color: rgb(194, 229, 236);
-  height: 20vh;
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  padding-left: 8vw;
-  padding-right: 8vw;
+.flex-item {
+  border: 2px solid rgb(231, 223, 216);
+  flex-grow: 1;
+  width: 25vw;
+  padding: 2rem;
+  border-radius: 40px;
+}
+
+.home-page-header {
+  height: 25vh;
+  display: flex;
+  flex-direction: row;
+  padding-top: 4vh;
+  align-items: center;
 }
 
 .hero-image {
-  width: 104px;
-  height: 104px;
+  width: 120px;
+  height: 120px;
   border-radius: 50%;
   object-fit: cover;
   display: block;
@@ -53,7 +73,7 @@ h3 {
 }
 
 .home-page-aboutme-title {
-  font-weight: 900;
+  font-weight: 500;
   background: linear-gradient(to right, pink, rgb(8, 93, 252));
   background: -webkit-linear-gradient(left, pink, rgb(8, 93, 252));
   -webkit-background-clip: text;
